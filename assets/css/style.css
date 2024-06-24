@@ -186,7 +186,7 @@ nav .fa {
     padding-bottom: 50px; /* Add padding to avoid overlap */
     text-align: center;
     position: relative;
-    background: linear-gradient(rgba(4, 9, 28, 0.7), rgba(4, 9, 28, 0.7)), url(../images/);
+    background: linear-gradient(rgba(4, 9, 28, 0.7), rgba(4, 9, 28, 0.7)), url(../images/matrix-code.png);
     background-position: center center;
     background-size: cover;
 }
@@ -213,6 +213,69 @@ nav .fa {
     margin-bottom: 5%;
     padding: 20px 10px;
     transition: 0.4s;
+}
+/* Contact us section/Form */
+form {
+    margin: 0 auto;
+    width: 50%;
+    color: #ff4591;
+}
+
+.contact h1 {
+    text-align: center;
+    letter-spacing: 2px;
+}
+.contact p {
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;min-height: 100vh;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #3a3a3a;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    display: block;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
 }
 
 /* Media Queries */
@@ -250,7 +313,7 @@ nav .fa {
         text-align: right;
         top: 0;
         right: 0;
-        transition: 0.3s;
+        transition: 10s;
     }
 
     .navigation-links ul {
@@ -273,6 +336,20 @@ nav .fa {
     .button {
         padding: 10px 28px;
         font-size: 15px;
+    }
+    .contact {
+        text-align: center;
+        letter-spacing: 2px;
+        top: 0;
+    }
+    container {
+        width: 100%;
+        max-width: 600px;
+        background-color: #ff4591;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: relative;
     }
 }
 

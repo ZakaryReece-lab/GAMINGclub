@@ -29,9 +29,9 @@
                 <div class="navigation-links">
                     <ul>
                         <li><a href="index.html">HOME</a></li>
-                        <li><a href="">ABOUT</a></li>
-                        <li><a href="">EVENTS</a></li>
-                        <li><a href="">CONTACT US</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#events">EVENTS</a></li>
+                        <li><a href="#contact">CONTACT US</a></li>
                     </ul>
                 </div>
 
@@ -48,7 +48,7 @@
     </header>
     <!-- Main Content -->
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <h1>About Us</h1>
             <p>We are a community of gamers who have created this little club for the likes of people who have love and
                 respect for gaming, be that individual or communal!<br> We offer a space to be among people who are
@@ -82,7 +82,7 @@
             </div>
         </section>
         <!-- Events -->
-        <section class="events">
+        <section class="events" id="events">
             <h1>Events</h1>
             <p>We hold events at our gaming club 3 days a week, one day per week for either Console gaming, PC gaming or
                 Board games!</p>
@@ -119,14 +119,33 @@
             </div>
         </section>
         <!-- Contact us -->
-        <section class="contact">
+        <section class="contact" id="contact">
             <h1>CONTACT US VIA OUR <strong>FORM</strong>
                 <p>Contact us to get the details about our events and we can get you signed up!</p>
-                <div class="row">
-                    <div class="contact-column">
+                    <div class="container">
+                        <form action="" method="POST" class="contact-form">
+                            <h2>Contact Us</h2>
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
 
                     </div>
-                </div>
 
         </section>
     </main>
