@@ -87,3 +87,21 @@ nav img {
     font-size: 20px;
     letter-spacing: 1px;
 }
+.button {
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #fff;
+    border: 1px solid #ff4591;
+    padding: 12px 34px;
+    font-size: 17px;
+    position: relative;
+    background: transparent;
+    cursor: pointer;
+}
+.button:hover {
+    border: 1px solid #ff4591;
+    background: #ff4591;
+    transition: 1s;
+
+}
