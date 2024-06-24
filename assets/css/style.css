@@ -164,6 +164,19 @@ nav .fa {
     font-weight: 550%;
     letter-spacing: 2px;
 }
+/* Events section */
+.events {
+    color: black;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    padding-top: 50px;
+}
+.events h1, h2, h3 {
+    color: black;
+}
+
+
 
 /* Media Queries */
 @media (max-width: 700px) {
