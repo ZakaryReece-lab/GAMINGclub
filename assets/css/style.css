@@ -277,6 +277,17 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #0056b3;
 }
+/* Footer */
+footer {
+    background-color: #ff4591;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    font-size: 14px;
+}
 
 /* Media Queries */
 @media (max-width: 1200px) {
