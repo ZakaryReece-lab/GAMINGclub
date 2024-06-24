@@ -117,20 +117,26 @@ nav .fa {
 
 /* About us */
 .about {
+    height: 100vh;
     margin: auto;
-    width: 75%;
+    width: 100%;
     padding-top: 100px;
     text-align: center;
+    background: linear-gradient(rgba(4, 9, 28, 0.7), rgba(4, 9, 28, 0.7)), url(../images/eldenring.png);
+    background-position: center center;
+    position: relative;
+    background-size: cover;
+
 }
 .about h1, h2, h3 {
     font-size: 30px;
     font-weight: 550%;
-    color: #000;
+    color: #fff;
     text-transform: uppercase;
 }
 .about p {
     font-size: 15px;
-    color: #000;
+    color: #fff;
     font-weight: 250%;
     line-height: 22px;
     padding: 10px;
