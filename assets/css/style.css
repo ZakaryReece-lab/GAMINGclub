@@ -47,3 +47,15 @@ nav img {
     font-size: 14px;
     color: #fff;
 }
+.navigation-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff4591;
+    margin: auto;
+    display: block;
+    transition: 0.4s;
+}
+.navigation-links ul li:hover::after {
+    width: 100%;
+}
