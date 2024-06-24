@@ -69,6 +69,10 @@ nav img {
 .navigation-links ul li:hover::after {
     width: 100%;
 }
+.navigation-links ul {
+    padding: 30px;
+
+}
 /* Heading text styles */
 .text {
     width: 90%;
@@ -109,6 +113,44 @@ nav img {
 nav .fa {
     display: none;
 }
+/* Main Content */
+
+/* About us */
+.about {
+    margin: auto;
+    width: 75%;
+    padding-top: 100px;
+    text-align: center;
+}
+.about h1, h2, h3 {
+    font-size: 30px;
+    font-weight: 550%;
+    color: #000;
+    text-transform: uppercase;
+}
+.about p {
+    font-size: 15px;
+    color: #000;
+    font-weight: 250%;
+    line-height: 22px;
+    padding: 10px;
+
+}
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.about-column {
+    flex-basis: 33%;
+    background: #ff4591;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
 
 /* Media Queries */
 @media (max-width: 700px) {
@@ -137,7 +179,7 @@ nav .fa {
         cursor: pointer;
         font-size: 22px;
         margin: 10px;
-        
+
 
     }
     
