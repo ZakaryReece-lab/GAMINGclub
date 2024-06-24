@@ -186,7 +186,7 @@ nav .fa {
     padding-bottom: 50px; /* Add padding to avoid overlap */
     text-align: center;
     position: relative;
-    background: linear-gradient(rgba(4, 9, 28, 0.7), rgba(4, 9, 28, 0.7)), url(../images/eldenring.png);
+    background: linear-gradient(rgba(4, 9, 28, 0.7), rgba(4, 9, 28, 0.7)), url(../images/);
     background-position: center center;
     background-size: cover;
 }
@@ -245,13 +245,11 @@ nav .fa {
 
     .navigation-links {
         position: absolute;
-        background: #ff4591;
         height: 100vh;
         width: 100%;
-        text-align: left;
+        text-align: right;
         top: 0;
-        right: -100%;
-        z-index: 2;
+        right: 0;
         transition: 0.3s;
     }
 
