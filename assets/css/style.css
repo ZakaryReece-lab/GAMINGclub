@@ -23,8 +23,8 @@ body {
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 28, 0.7), rgba(4, 9, 28, 0.7)), url(../images/BG3_Party.0.png);
     position: relative;
-    background-position: center;
-    background-size: cflexover;
+    background-position: center center;
+    background-size: cover;
 
 }
 /* Navbar styles */
@@ -150,6 +150,13 @@ nav .fa {
     margin-bottom: 5%;
     padding: 20px 10px;
     box-sizing: border-box;
+    transition: 0.4s;
+}
+.about-column h3 {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 550%;
+    letter-spacing: 2px;
 }
 
 /* Media Queries */
@@ -181,6 +188,9 @@ nav .fa {
         margin: 10px;
 
 
+    }
+    .row {
+        flex-direction: column;
     }
     
     
