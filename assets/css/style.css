@@ -166,15 +166,44 @@ nav .fa {
 }
 /* Events section */
 .events {
-    color: black;
-    text-align: center;
+    height: 100vh;
     margin: auto;
-    width: 80%;
-    padding-top: 50px;
+    width: 100%;
+    padding-top: 100px;
+    text-align: center;
+    position: relative;
+
 }
-.events h1, h2, h3 {
-    color: black;
+.events h1, h3 {
+    font-size: 30px;
+    font-weight: 550%;
+    color: #fff;
+    text-transform: uppercase;
 }
+.events p {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 250%;
+    line-height: 22px;
+    padding: 10px;
+}   
+.events-column {
+    flex-basis: 33%;
+    background: #ff4591;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+.about-column h3 {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 550%;
+    letter-spacing: 2px;
+}
+
+
 
 
 
