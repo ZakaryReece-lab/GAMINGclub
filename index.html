@@ -1,169 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+The 'lang' attribute specifies the language of the document, helping search engines and browsers determine the primary language used on the page.
+This enhances accessibility for users and improves SEO by making the language explicit.
+-->
 
 <head>
+    <!-- 
+    The <head> element contains metadata and links to external resources. 
+    Metadata is essential for proper rendering, SEO, and overall functionality, even though it's not displayed directly on the page. 
+    -->
+
     <meta charset="UTF-8">
+    <!-- 
+    Specifies UTF-8 as the character encoding, which supports characters from virtually all languages. 
+    This ensures that the content displays correctly across different languages and regions.
+    -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Additional meta tags for description and keywords -->
-    <meta name="description"
-        content="Gaming club in Stafford, a club for gaming together and for compettions, gaming events in Stafford, playstation/xbox/switch/pc gaming, board game events in stafford">
-    <meta name="keywords" content="Stafford, Staffordshire, Gaming club in Stafford, Gaming events, Gaming compettions">
-    <!-- Link to style.css -->
+    <!-- 
+    Sets the viewport to match the device’s width and initial zoom level.
+    This makes the webpage responsive, ensuring it displays correctly on all devices, from mobile phones to desktop computers.
+    -->
+
+    <meta name="description" content="Gaming club in Stafford, a club for gaming together and for competitions, gaming events in Stafford, playstation/xbox/switch/pc gaming, board game events in Stafford">
+    <!-- 
+    Provides a brief description of the page's content. 
+    Search engines use this description in search results, and social media platforms use it when links are shared.
+    -->
+
+    <meta name="keywords" content="Stafford, Staffordshire, Gaming club in Stafford, Gaming events, Gaming competitions">
+    <!-- 
+    Keywords related to the content of the page, which can help search engines index and rank the page for relevant search queries.
+    Although modern SEO places more emphasis on content quality, keywords can still contribute to search engine optimization.
+    -->
+
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Favicon -->
+    <!-- 
+    Links to the external stylesheet where all CSS rules for the page are defined.
+    Separating the content (HTML) from the design (CSS) promotes cleaner, more maintainable code.
+    -->
+
     <link rel="icon" href="assets/favicon/1055053_controller_game controller_video game_icon (2).png">
-    <!-- Link to fontawesome 5 cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-v4AkvgiJ1Q7s1cZHPueJHfzV8lA7BlRMHC0xx6ZpIURm0dRx5pD9Zz2w31DLsFuGeCvV25TqT2MExG0bWupwGA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Title -->
+    <!-- 
+    Sets the favicon, a small icon displayed in the browser tab, helping users identify the website quickly when multiple tabs are open.
+    The favicon also contributes to the visual branding of the site.
+    -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+          integrity="sha512-v4AkvgiJ1Q7s1cZHPueJHfzV8lA7BlRMHC0xx6ZpIURm0dRx5pD9Zz2w31DLsFuGeCvV25TqT2MExG0bWupwGA==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- 
+    Includes FontAwesome, a popular icon library, via a CDN. 
+    This allows for easy integration of high-quality icons throughout the webpage without needing to manually upload or create custom icons.
+    -->
+
     <title>Stafford Gaming Club</title>
+    <!-- 
+    Sets the title of the webpage, which is displayed on the browser tab. 
+    The title is important for user experience and SEO as it provides a clear description of the page's content to both users and search engines.
+    -->
 </head>
 
 <body>
+    <!-- 
+    The <body> element contains all the visible content on the page, including text, images, and interactive elements. 
+    This is the content that users see and interact with when they visit the webpage.
+    -->
+
     <header>
+        <!-- 
+        The header section typically contains introductory content, branding, and primary navigation links. 
+        It is crucial for establishing the site’s identity and providing easy access to key areas of the website.
+        -->
+
         <section class="header">
+            <!-- 
+            A section within the header that is dedicated to specific content or a group of elements. 
+            Using sections like this improves the organization and maintainability of the page.
+            -->
+
             <nav>
-                <a href="index.html"><img src="assets/favicon/Preview.png"
-                        alt="logo which takes you back to homepage"></a>
+                <!-- 
+                The <nav> element is used for a set of navigation links, indicating to browsers and assistive technologies that these links are for site navigation.
+                This improves accessibility and user experience by clearly defining the navigation structure.
+                -->
+
+                <a href="index.html">
+                    <img src="assets/favicon/Preview.png" alt="logo which takes you back to homepage">
+                </a>
+                <!-- 
+                A clickable logo image that links back to the homepage. 
+                This is a common web design convention that provides a familiar navigation tool for users.
+                -->
+
                 <div class="navigation-links">
+                    <!-- 
+                    A container for navigation links, making it easier to style and manage the layout of the navigation bar consistently. 
+                    Grouping links like this allows for centralized styling and more flexible design changes.
+                    -->
+
                     <ul>
+                        <!-- 
+                        An unordered list used to group navigation links. 
+                        Lists are often used for navigation menus because they allow for structured and semantically meaningful content.
+                        -->
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="#about">ABOUT</a></li>
                         <li><a href="#events">EVENTS</a></li>
                         <li><a href="#contact">CONTACT US</a></li>
                     </ul>
                 </div>
-
             </nav>
-            <div class="text">
-                <h1>STAFFORD GAMING CLUB</h1>
-                <p>Welcome to our official website for the Stafford Gaming Club.<br>If you are a <strong>GAMER</strong>,
-                    you're in the right place!</p>
-                <a href="https://www.facebook.com/?locale=en_GB" class="button"><strong>COME VISIT OUR FACEBOOK PAGE TO
-                        KNOW MORE!</strong></a>
-            </div>
 
+            <div class="text">
+                <!-- 
+                A container for text content, typically the main headline and introductory paragraph. 
+                Structuring text within a dedicated <div> allows for more precise styling and positioning on the page.
+                -->
+
+                <h1>STAFFORD GAMING CLUB</h1>
+                <p>Welcome to our official website for the Stafford Gaming Club.<br>
+                    If you are a <strong>GAMER</strong>, you're in the right place!</p>
+
+                <a href="https://www.facebook.com/?locale=en_GB" class="button">
+                    <strong>COME VISIT OUR FACEBOOK PAGE TO KNOW MORE!</strong>
+                </a>
+                <!-- 
+                A call-to-action button linking to the club's Facebook page, encouraging users to engage further. 
+                The use of a strong tag within the anchor emphasizes the importance of the action.
+                -->
+            </div>
         </section>
     </header>
-    <!-- Main Content -->
+
     <main>
+        <!-- 
+        The <main> element contains the main content of the page. 
+        It is important for accessibility, as it allows assistive technologies to navigate directly to the primary content of the page.
+        -->
+
         <section class="about" id="about">
+            <!-- 
+            The 'about' section provides information about the club. 
+            The id attribute allows this section to be targeted by internal links and CSS styles.
+            -->
+
             <h1>About Us</h1>
-            <p>We are a community of gamers who have created this little club for the likes of people who have love and
-                respect for gaming, be that individual or communal!<br> We offer a space to be among people who are
-                passionate about gaming, if that be Playstation, Xbox, PC Gaming, Switch, hell we even have something for
-                a <strong>GAMEBOY.</strong><br> We also have competitive gaming events which range from FPS games, RPG
-                tabletop style games and even board games like D&D and Warhammer 40k.<br> If you feel like this club is
-                for you please head to our contact area and send us an email!</p>
+            <p>We are a community of gamers who have created this little club for the likes of people who have love and respect for gaming, be that individual or communal!<br> 
+                We offer a space to be among people who are passionate about gaming, if that be Playstation, Xbox, PC Gaming, Switch, hell we even have something for a <strong>GAMEBOY.</strong><br> 
+                We also have competitive gaming events which range from FPS games, RPG tabletop style games and even board games like D&D and Warhammer 40k.<br> 
+                If you feel like this club is for you please head to our contact area and send us an email!</p>
+
             <div class="row">
+                <!-- 
+                A row container that aligns multiple columns of content horizontally. 
+                This layout strategy is common in responsive design to organize content in a grid system.
+                -->
+
                 <div class="about-column">
+                    <!-- 
+                    A column within the 'about' section that focuses on console gaming. 
+                    Columns allow content to be split vertically and organized neatly, especially in a grid layout.
+                    -->
+
                     <h3>Console Gaming</h3>
-                    <p>Tournaments: Competitive play in popular games like "FIFA," "Call of Duty," or "Super Smash Bros."
-                        Participants are often divided into brackets, and winners progress until a champion is crowned.
-                    </p>
+                    <p>Tournaments: Competitive play in popular games like "FIFA," "Call of Duty," or "Super Smash Bros." 
+                        Participants are often divided into brackets, and winners progress until a champion is crowned.</p>
                 </div>
+
                 <div class="about-column">
                     <h3>PC Gaming</h3>
-                    <p>Participants may compete in popular esports titles like "League of Legends," "Counter-Strike:
-                        Global Offensive," or "Dota 2," often in structured tournaments with brackets and prizes. The
-                        atmosphere is charged with excitement, as players strategize and communicate in real-time,
-                        supported by robust network infrastructure to ensure lag-free gameplay.
-
-                    </p>
+                    <p>Participants may compete in popular esports titles like "League of Legends," "Counter-Strike: Global Offensive," or "Dota 2," 
+                        often in structured tournaments with brackets and prizes. The atmosphere is charged with excitement, as players strategize and communicate in real-time, 
+                        supported by robust network infrastructure to ensure lag-free gameplay.</p>
                 </div>
+
                 <div class="about-column">
                     <h3>Board games</h3>
-                    <p>Board Games Bonanza is a full-day event dedicated to board game enthusiasts of all ages and skill
-                        levels. The event features a diverse range of board games, from classic favorites like Monopoly
-                        and Scrabble to modern hits like Catan and Ticket to Ride. Attendees can explore various themed
-                        zones, participate in tournaments, and join in on collaborative mega-games.</p>
+                    <p>Board Games Bonanza is a full-day event dedicated to board game enthusiasts of all ages and skill levels. 
+                        The event features a diverse range of board games, from classic favorites like Monopoly and Scrabble to modern hits like Catan and Ticket to Ride. 
+                        Attendees can explore various themed zones, participate in tournaments, and join in on collaborative mega-games.</p>
                 </div>
             </div>
         </section>
-        <!-- Events -->
+
         <section class="events" id="events">
+            <!-- 
+            The 'events' section provides details about the club's events. 
+            The id attribute allows this section to be easily linked to and styled.
+            -->
+
             <h1>Events</h1>
-            <p>We hold events at our gaming club 3 days a week, one day per week for either Console gaming, PC gaming or
-                Board games!</p>
+            <p>We hold events at our gaming club 3 days a week, one day per week for either Console gaming, PC gaming, or Board games!</p>
+
             <div class="row">
                 <div class="events-column">
                     <h3>CONSOLE GAMING EVENT</h3>
-                    <p>FRIDAYS<br>17:30 - 21:30<br>Come on down for a Console Gaming Session, we have casual gaming and
-                        also <strong>COMPETITIONS!</strong></p>
-                    <p>The console gaming event is a vibrant gathering of gamers, featuring competitions on the latest
-                        consoles, exclusive game previews, and developer panels. Attendees enjoyed hands-on gameplay,
-                        merchandise giveaways, and networking opportunities with fellow gaming <em>enthusiasts</em>.
-                    </p>
+                    <p>FRIDAYS<br>17:30 - 21:30<br>Come on down for a Console Gaming Session, we have casual gaming and also <strong>COMPETITIONS!</strong></p>
+                    <p>The console gaming event is a vibrant gathering of gamers, featuring competitions on the latest consoles, 
+                        exclusive game previews, and developer panels. Attendees enjoyed hands-on gameplay, merchandise giveaways, 
+                        and networking opportunities with fellow gaming <em>enthusiasts</em>.</p>
                 </div>
+
                 <div class="events-column">
                     <h3>PC GAMING EVENT</h3>
-                    <p>SATURDAYS<br>17:30 - 21:30<br>Come on down for a PC Gaming Session, we have casual gaming and
-                        also <strong>COMPETITIONS!</strong></p>
-                    <p>Our PC gaming events are a gathering where gamers and industry professionals come together to
-                        celebrate and experience the latest in PC gaming. These events often feature game demos and
-                        esports tournaments providing an immersive environment for <em>enthusiasts</em> explore new
-                        games, technology, and trends in the gaming industry.</p>
+                    <p>SATURDAYS<br>17:30 - 21:30<br>Come on down for a PC Gaming Session, we have casual gaming and also <strong>COMPETITIONS!</strong></p>
+                    <p>Our PC gaming events are a gathering where gamers and industry professionals come together to celebrate and experience the latest in PC gaming. 
+                        These events often feature game demos and esports tournaments providing an immersive environment for <em>enthusiasts</em> to explore new games, technology, and trends in the gaming industry.</p>
                 </div>
+
                 <div class="events-column">
                     <h3>BOARD GAMES EVENT</h3>
-                    <p>WEDNESDAYS<br>17:30 - 21:30<br>Come on down for a Board Games Session, we have casual gaming and
-                        also <strong>COMPETITIONS!</strong></p>
-                    <p>Join us for an exciting evening of strategy, fun, and camaraderie at <strong>STAFFORD GAMING
-                            CLUB'S</strong> Board Games Meetup! Whether you're a seasoned player or new to the world of
-                        board games, there's something for everyone. We'll have a variety of games available, from
-                        classic favorites to modern hits. It's a great opportunity to relax, meet new people, and
-                        engage in friendly competition. Light refreshments will be provided, and feel free to bring your
-                        own favorite game to share with the group. See you there for a night of gaming <em>FUN!</em></p>
+                    <p>WEDNESDAYS<br>17:30 - 21:30<br>Come on down for a Board Games Session, we have casual gaming and also <strong>COMPETITIONS!</strong></p>
+                    <p>Join us for an exciting evening of strategy, fun, and camaraderie at <strong>STAFFORD GAMING CLUB'S</strong> Board Games Meetup! 
+                        Whether you're a seasoned player or new to the world of board games, there's something for everyone. 
+                        We'll have a variety of games available, from classic favorites to modern hits. 
+                        It's a great opportunity to relax, meet new people, and engage in friendly competition. 
+                        Light refreshments will be provided, and feel free to bring your own favorite game to share with the group. 
+                        See you there for a night of gaming <em>FUN!</em></p>
                 </div>
             </div>
         </section>
-        <!-- Contact us -->
+
         <section class="contact" id="contact">
-            <h1>CONTACT US VIA OUR <strong>FORM</strong>
-                <p>Contact us to get the details about our events and we can get you signed up!</p>
-                    <div class="container">
-                        <form action="" method="POST" class="contact-form">
-                            <h2>Contact Us</h2>
-                            <div class="form-group">
-                                <label for="name">Your Name</label>
-                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Your Email</label>
-                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea>
-                            </div>
-                            <button type="submit">Send Message</button>
-                        </form>
+            <!-- 
+            The 'contact' section provides a way for users to reach out to the club. 
+            The id attribute makes it easy to link to this section from other parts of the page or external pages.
+            -->
+
+            <h1>CONTACT US VIA OUR <strong>FORM</strong></h1>
+            <p>Contact us to get the details about our events and we can get you signed up!</p>
+
+            <div class="container">
+                <!-- 
+                A container that holds the form elements together, making it easier to style and position the form on the page.
+                -->
+
+                <form action="" method="POST" class="contact-form">
+                    <!-- 
+                    The form element allows users to submit their information. 
+                    It uses the POST method for secure data submission.
+                    -->
+
+                    <h2>Contact Us</h2>
+
+                    <div class="form-group">
+                        <!-- 
+                        A grouping of related form elements, typically used for styling and organization.
+                        -->
+
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        <!-- 
+                        A text input field for the user's name. The 'required' attribute ensures the user cannot submit the form without completing this field.
+                        -->
                     </div>
 
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <!-- 
+                        A text input field for the user's email address. Using 'email' as the input type provides basic validation for correct email formatting.
+                        -->
                     </div>
 
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+                        <!-- 
+                        A text input field for the subject of the message. The 'required' attribute ensures that this field must be filled out.
+                        -->
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea>
+                        <!-- 
+                        A textarea for the user's message, allowing for multiline input. The 'rows' attribute sets the initial height of the textarea.
+                        -->
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                    <!-- 
+                    The submit button for the form. When clicked, the form data is sent to the server specified in the 'action' attribute of the form element.
+                    -->
+                </form>
+            </div>
         </section>
-        <!-- Footer -->
-        <section>
-            <footer>
-                <div class="footer-content">
-                    <p>&copy; 2024 StaffordGamingClub.com All Rights Reserved.</p>
-                </div>
 
+        <section>
+            <!-- 
+            An additional section, likely used for organizing the footer content. 
+            -->
+
+            <footer>
+                <!-- 
+                The footer typically contains site-wide information such as copyright notices, links to terms of service, or contact information.
+                -->
+
+                <div class="footer-content">
+                    <!-- 
+                    A container for footer content, making it easier to style and manage the layout.
+                    -->
+                    <p>&copy; 2024 StaffordGamingClub.com All Rights Reserved.</p>
+                    <!-- 
+                    A copyright notice that legally protects the content and indicates ownership of the site.
+                    -->
+                </div>
             </footer>
         </section>
     </main>
-    <link rel="script" href="script.html">
+
     <script src="https://kit.fontawesome.com/950acdf4f6.js" crossorigin="anonymous"></script>
-    <script>
-
-
-    </script>
+    <!-- 
+    A script tag that includes a FontAwesome kit for icons, loaded from a CDN. This script enables the use of FontAwesome icons within the page.
+    -->
 </body>
-
 </html>

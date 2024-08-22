@@ -1,384 +1,408 @@
-/* Google fonts import */
+/* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Imports the 'Roboto Slab' and 'Roboto' fonts from Google Fonts for use throughout the site. */
 
-/* Wildcard selector to override default browser styles */
+/* Universal Selector Reset */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    padding: 0; /* Removes default padding from all elements to ensure consistency across browsers. */
+    margin: 0; /* Removes default margin from all elements to eliminate unwanted space. */
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height. */
 }
 
-/* General styles */
+/* General Heading Styles */
 h1, h2, h3 {
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
+    font-family: 'Roboto', sans-serif; /* Applies the 'Roboto' font to all h1, h2, and h3 elements for a modern look. */
+    color: #fff; /* Sets the text color to white for visibility against a dark background. */
 }
 
+/* Body Styling */
 body {
-    font-family: "Roboto Slab", sans-serif;
-    color: #fff;
-    background-color: #04091c;
+    font-family: "Roboto Slab", sans-serif; /* Uses 'Roboto Slab' for the body text to create a readable and stylish look. */
+    color: #fff; /* Sets the text color to white to contrast with the dark background. */
+    background-color: #04091c; /* Applies a deep navy background color to the entire page. */
 }
 
-/* Header */
+/* Header Section */
 .header {
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 28, 0.7), rgba(4, 9, 28, 0.7)), url(../images/BG3_Party.0.png);
-    position: relative;
-    background-position: center center;
-    background-size: cover;
+    min-height: 100vh; /* Ensures the header section covers the full viewport height. */
+    width: 100%; /* Sets the header to span the full width of the viewport. */
+    background-image: linear-gradient(rgba(4, 9, 28, 0.7), rgba(4, 9, 28, 0.7)), url(../images/BG3_Party.0.png); 
+    /* Applies a background image with a dark linear gradient overlay to improve text readability. */
+    position: relative; /* Positions the header relative to other elements for layering purposes. */
+    background-position: center center; /* Centers the background image both horizontally and vertically. */
+    background-size: cover; /* Ensures the background image covers the entire header section. */
 }
 
-/* Navbar styles */
+/* Navigation Bar Styles */
 nav {
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Uses Flexbox for a flexible and responsive layout of the navigation bar. */
+    padding: 2% 6%; /* Adds padding to the top/bottom (2%) and left/right (6%) for spacing within the navbar. */
+    justify-content: space-between; /* Distributes space between the logo and navigation links. */
+    align-items: center; /* Vertically aligns the navigation bar items to the center. */
 }
 
 nav img {
-    width: 200px;
+    width: 200px; /* Sets the width of the logo image to 200px for consistent sizing. */
 }
 
 .navigation-links {
-    flex: 1;
-    text-align: right;
+    flex: 1; /* Allows the navigation links to take up any remaining space in the Flexbox container. */
+    text-align: right; /* Aligns the navigation links to the right side of the navbar. */
 }
 
 .navigation-links ul {
-    padding: 30px;
+    padding: 30px; /* Adds padding around the list to create space between the links and the edge of the container. */
 }
 
 .navigation-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 7px 11px;
-    position: relative;
+    list-style: none; /* Removes the default bullet points from the list items. */
+    display: inline-block; /* Displays the list items inline, side by side. */
+    padding: 7px 11px; /* Adds padding around each list item for clickable area and spacing. */
+    position: relative; /* Sets the position to relative for use with the hover effect. */
 }
 
 .navigation-links ul li a {
-    text-decoration: none;
-    font-size: 14px;
-    color: #fff;
+    text-decoration: none; /* Removes the underline from the links for a cleaner appearance. */
+    font-size: 14px; /* Sets the font size of the links to 14px for readability. */
+    color: #fff; /* Colors the links white for visibility against the dark background. */
 }
 
 .navigation-links ul li::after {
-    content: '';
-    width: 0;
-    height: 2px;
-    background: #ff4591;
-    margin: auto;
-    display: block;
-    transition: 0.4s;
+    content: ''; /* Creates a pseudo-element for the underline effect. */
+    width: 0; /* Initially sets the width of the underline to 0, hiding it. */
+    height: 2px; /* Sets the thickness of the underline to 2px. */
+    background: #ff4591; /* Colors the underline with a pinkish color (#ff4591). */
+    margin: auto; /* Centers the underline within the list item. */
+    display: block; /* Displays the underline as a block-level element. */
+    transition: 0.4s; /* Smoothly transitions the width change over 0.4 seconds when hovered. */
 }
 
 .navigation-links ul li:hover::after {
-    width: 100%;
+    width: 100%; /* Expands the underline to full width when the list item is hovered over. */
 }
 
-/* Heading text styles */
+/* Heading Text Styles */
 .text {
-    width: 90%;
-    color: #fff;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    width: 90%; /* Sets the width of the text container to 90% of its parent element. */
+    color: #fff; /* Colors the text white to stand out against the background. */
+    top: 50%; /* Positions the text 50% from the top of the container. */
+    left: 50%; /* Centers the text horizontally by positioning it 50% from the left. */
+    position: absolute; /* Uses absolute positioning to place the text over the header background. */
+    transform: translate(-50%, -50%); /* Centers the text vertically and horizontally using transform. */
+    text-align: center; /* Centers the text within its container. */
 }
 
 .text h1 {
-    font-size: 70px;
-    letter-spacing: 2px;
+    font-size: 70px; /* Sets the font size of the main heading to 70px for emphasis. */
+    letter-spacing: 2px; /* Adds 2px of space between each letter for a more dramatic effect. */
 }
 
 .text p {
-    margin: 10px 0 40px;
-    font-size: 20px;
-    letter-spacing: 1px;
+    margin: 10px 0 40px; /* Adds margin above (10px) and below (40px) the paragraph for spacing. */
+    font-size: 20px; /* Sets the font size of the paragraph text to 20px for readability. */
+    letter-spacing: 1px; /* Adds 1px of space between letters to enhance readability. */
 }
 
+/* Button Styles */
 .button {
-    display: inline-block;
-    text-decoration: none;
-    letter-spacing: 1px;
-    color: #fff;
-    border: 1px solid #ff4591;
-    padding: 12px 34px;
-    font-size: 17px;
-    position: relative;
-    background: transparent;
-    cursor: pointer;
+    display: inline-block; /* Displays the button as an inline block element. */
+    text-decoration: none; /* Removes the underline from the button text. */
+    letter-spacing: 1px; /* Adds 1px of space between the letters in the button text. */
+    color: #fff; /* Colors the button text white to contrast with the background. */
+    border: 1px solid #ff4591; /* Adds a border around the button with the pink color (#ff4591). */
+    padding: 12px 34px; /* Adds padding inside the button for a larger clickable area. */
+    font-size: 17px; /* Sets the font size of the button text to 17px for readability. */
+    position: relative; /* Sets the button's position to relative for layering and alignment purposes. */
+    background: transparent; /* Makes the button background transparent by default. */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button, indicating it's clickable. */
 }
 
 .button:hover {
-    border: 1px solid #ff4591;
-    background: #ff4591;
-    transition: 1s;
+    border: 1px solid #ff4591; /* Maintains the border color on hover. */
+    background: #ff4591; /* Changes the button background to pink (#ff4591) when hovered over. */
+    transition: 1s; /* Adds a smooth 1-second transition effect for the background color change. */
 }
 
 nav .fa {
-    display: none;
+    display: none; /* Hides the FontAwesome icons by default (used for mobile navigation). */
 }
 
 /* Main Content */
 
-/* About us */
+/* About Us Section */
 .about {
-    height: auto;
-    margin: auto;
-    width: 100%;
-    padding-top: 100px;
-    padding-bottom: 50px; /* Add padding to avoid overlap */
-    text-align: center;
-    background: linear-gradient(rgba(4, 9, 28, 0.7), rgba(4, 9, 28, 0.7)), url(../images/eldenring.png);
-    background-position: center center;
-    position: relative;
-    background-size: cover;
+    height: auto; /* Allows the height of the 'about' section to adjust automatically based on content. */
+    margin: auto; /* Centers the 'about' section horizontally within its parent container. */
+    width: 100%; /* Sets the width of the 'about' section to 100% of its parent container. */
+    padding-top: 100px; /* Adds 100px of padding to the top to create space above the content. */
+    padding-bottom: 50px; /* Adds 50px of padding to the bottom to create space below the content. */
+    text-align: center; /* Centers the text within the 'about' section. */
+    background: linear-gradient(rgba(4, 9, 28, 0.7), rgba(4, 9, 28, 0.7)), url(../images/eldenring.png); 
+    /* Applies a background image with a dark linear gradient overlay to improve text readability. */
+    background-position: center center; /* Centers the background image both horizontally and vertically. */
+    position: relative; /* Positions the 'about' section relative to other elements for layering purposes. */
+    background-size: cover; /* Ensures the background image covers the entire 'about' section. */
 }
 
 .about h1, h2, h3 {
-    font-size: 30px;
-    font-weight: 550;
-    color: #fff;
-    text-transform: uppercase;
+    font-size: 30px; /* Sets the font size for the headings to 30px for a consistent look. */
+    font-weight: 550; /* Sets the font weight to 550, making the text slightly bold. */
+    color: #fff; /* Colors the headings white to stand out against the background. */
+    text-transform: uppercase; /* Converts the headings text to uppercase for emphasis. */
 }
 
 .about p {
-    font-size: 15px;
-    color: #fff;
-    font-weight: 250;
-    line-height: 22px;
-    padding: 10px;
+   
+
+ font-size: 15px; /* Sets the font size for the paragraph text to 15px for readability. */
+    color: #fff; /* Colors the paragraph text white to contrast with the dark background. */
+    font-weight: 250; /* Sets the font weight to 250, making the text lighter. */
+    line-height: 22px; /* Sets the line height to 22px to improve readability. */
+    padding: 10px; /* Adds 10px of padding around the paragraph text for spacing. */
 }
 
+/* Layout Styles */
 .row {
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    margin-top: 5%; /* Adds 5% margin to the top of the row to create space above it. */
+    display: flex; /* Uses Flexbox to create a responsive layout for the row. */
+    justify-content: space-between; /* Distributes space evenly between columns within the row. */
+    flex-wrap: wrap; /* Allows the columns to wrap onto the next line if the container is too narrow. */
 }
 
 .about-column {
-    flex-basis: 30%;
-    background: #ff4591;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 10px;
-    transition: 0.4s;
+    flex-basis: 30%; /* Sets the base width of each column to 30% of the row's width. */
+    background: #ff4591; /* Colors the background of each column with pink (#ff4591). */
+    border-radius: 10px; /* Rounds the corners of each column with a 10px radius. */
+    margin-bottom: 5%; /* Adds 5% margin to the bottom of each column to create space between rows. */
+    padding: 20px 10px; /* Adds 20px padding on the top/bottom and 10px on the left/right for spacing inside the column. */
+    transition: 0.4s; /* Adds a smooth 0.4-second transition effect for any changes in the column. */
 }
 
 .about-column h3 {
-    text-align: center;
-    margin: 10px 0;
-    font-weight: 550;
-    letter-spacing: 2px;
+    text-align: center; /* Centers the h3 heading within each column. */
+    margin: 10px 0; /* Adds 10px of margin to the top and bottom of the heading for spacing. */
+    font-weight: 550; /* Sets the font weight to 550, making the text slightly bold. */
+    letter-spacing: 2px; /* Adds 2px of space between each letter for a more pronounced effect. */
 }
 
-/* Events section */
+/* Events Section */
 .events {
-    height: auto;
-    margin: auto;
-    width: 100%;
-    padding-top: 100px;
-    padding-bottom: 50px; /* Add padding to avoid overlap */
-    text-align: center;
-    position: relative;
-    background: linear-gradient(rgba(4, 9, 28, 0.7), rgba(4, 9, 28, 0.7)), url(../images/matrix-code.png);
-    background-position: center center;
-    background-size: cover;
+    height: auto; /* Allows the height of the 'events' section to adjust automatically based on content. */
+    margin: auto; /* Centers the 'events' section horizontally within its parent container. */
+    width: 100%; /* Sets the width of the 'events' section to 100% of its parent container. */
+    padding-top: 100px; /* Adds 100px of padding to the top to create space above the content. */
+    padding-bottom: 50px; /* Adds 50px of padding to the bottom to create space below the content. */
+    text-align: center; /* Centers the text within the 'events' section. */
+    position: relative; /* Positions the 'events' section relative to other elements for layering purposes. */
+    background: linear-gradient(rgba(4, 9, 28, 0.7), rgba(4, 9, 28, 0.7)), url(../images/matrix-code.png); 
+    /* Applies a background image with a dark linear gradient overlay to improve text readability. */
+    background-position: center center; /* Centers the background image both horizontally and vertically. */
+    background-size: cover; /* Ensures the background image covers the entire 'events' section. */
 }
 
 .events h1, h3 {
-    font-size: 30px;
-    font-weight: 550;
-    color: #fff;
-    text-transform: uppercase;
+    font-size: 30px; /* Sets the font size for the headings to 30px for consistency with the 'about' section. */
+    font-weight: 550; /* Sets the font weight to 550, making the text slightly bold. */
+    color: #fff; /* Colors the headings white to stand out against the background. */
+    text-transform: uppercase; /* Converts the headings text to uppercase for emphasis. */
 }
 
 .events p {
-    font-size: 15px;
-    color: #fff;
-    font-weight: 250;
-    line-height: 22px;
-    padding: 10px;
+    font-size: 15px; /* Sets the font size for the paragraph text to 15px for readability. */
+    color: #fff; /* Colors the paragraph text white to contrast with the dark background. */
+    font-weight: 250; /* Sets the font weight to 250, making the text lighter. */
+    line-height: 22px; /* Sets the line height to 22px to improve readability. */
+    padding: 10px; /* Adds 10px of padding around the paragraph text for spacing. */
 }
 
 .events-column {
-    flex-basis: 30%;
-    background: #ff4591;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 10px;
-    transition: 0.4s;
+    flex-basis: 30%; /* Sets the base width of each column to 30% of the row's width. */
+    background: #ff4591; /* Colors the background of each column with pink (#ff4591). */
+    border-radius: 10px; /* Rounds the corners of each column with a 10px radius. */
+    margin-bottom: 5%; /* Adds 5% margin to the bottom of each column to create space between rows. */
+    padding: 20px 10px; /* Adds 20px padding on the top/bottom and 10px on the left/right for spacing inside the column. */
+    transition: 0.4s; /* Adds a smooth 0.4-second transition effect for any changes in the column. */
 }
-/* Contact us section/Form */
+
+/* Contact Us Section / Form */
 form {
-    margin: 0 auto;
-    width: 50%;
-    color: #ff4591;
+    margin: 0 auto; /* Centers the form horizontally within its container. */
+    width: 50%; /* Sets the width of the form to 50% of its parent container. */
+    color: #ff4591; /* Colors the form text with pink (#ff4591). */
 }
 
 .contact h1 {
-    text-align: center;
-    letter-spacing: 2px;
+    text-align: center; /* Centers the main heading within the contact section. */
+    letter-spacing: 2px; /* Adds 2px of space between each letter for emphasis. */
 }
+
 .contact p {
-    text-align: center;
+    text-align: center; /* Centers the paragraph text within the contact section. */
 }
+
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;min-height: 100vh;
+    display: flex; /* Uses Flexbox to create a responsive layout for the container. */
+    justify-content: center; /* Centers the content horizontally within the container. */
+    align-items: center; /* Centers the content vertically within the container. */
+    min-height: 100vh; /* Sets the minimum height of the container to fill the entire viewport height. */
 }
 
 .contact-form h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
+    font-size: 24px; /* Sets the font size of the form heading to 24px for readability. */
+    margin-bottom: 20px; /* Adds 20px of margin below the heading to create space before the form fields. */
+    text-align: center; /* Centers the form heading within the contact form. */
 }
+
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Adds 20px of margin below each form group to create space between fields. */
 }
 
 .form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
+    display: block; /* Displays the label as a block element, forcing it to take up the full width. */
+    font-weight: bold; /* Makes the label text bold for emphasis and readability. */
+    margin-bottom: 5px; /* Adds 5px of margin below the label to create space before the input field. */
 }
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    width: 100%; /* Sets the width of input and textarea elements to 100% of their parent container. */
+    padding: 10px; /* Adds 10px of padding inside the input and textarea for spacing. */
+    font-size: 16px; /* Sets the font size of the input and textarea text to 16px for readability. */
+    border: 1px solid #ccc; /* Adds a 1px solid border around input and textarea elements with a light gray color (#ccc). */
+    border-radius: 4px; /* Rounds the corners of the input and textarea elements with a 4px radius. */
 }
 
 .form-group textarea {
-    resize: vertical;
+    resize: vertical; /* Allows the textarea to be resized vertically only. */
 }
 
 button[type="submit"] {
-    background-color: #3a3a3a;
-    color: #fff;
-    border: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
-    width: 100%;
-    display: block;
+    background-color: #3a3a3a; /* Sets the background color of the submit button to a dark gray (#3a3a3a). */
+    color: #fff; /* Colors the button text white to contrast with the dark background. */
+    border: none; /* Removes the border from the submit button for a cleaner look. */
+    padding: 12px 20px; /* Adds 12px of padding on the top/bottom and 20px on the left/right for spacing inside the button. */
+    font-size: 16px; /* Sets the font size of the button text to 16px for readability. */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button, indicating it's clickable. */
+    border-radius: 4px; /* Rounds the corners of the button with a 4px radius. */
+    width: 100%; /* Sets the button width to 100% of its parent container. */
+    display: block; /* Ensures the button takes up the full width available. */
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Changes the background color of the button to blue (#0056b3) when hovered over. */
 }
-/* Footer */
+
+/* Footer Section */
 footer {
-    background-color: #ff4591;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    background-color: #ff4591; /* Sets the background color of the footer to pink (#ff4591). */
+    color: #fff; /* Colors the footer text white for contrast against the background. */
+    padding: 20px 0; /* Adds 20px of padding to the top and bottom of the footer for spacing. */
+    text-align: center; /* Centers the footer text within its container. */
 }
 
 .footer-content {
-    font-size: 14px;
+    font-size:
+
+ 14px; /* Sets the font size of the footer content to 14px for readability. */
 }
 
 /* Media Queries */
+
+/* Media Query for screens 1200px and below */
 @media (max-width: 1200px) {
     .text h1 {
-        font-size: 50px;
+        font-size: 50px; /* Reduces the font size of the main heading to 50px for smaller screens. */
     }
 }
 
+/* Media Query for screens 992px and below */
 @media (max-width: 992px) {
     .text h1 {
-        font-size: 40px;
+        font-size: 40px; /* Further reduces the font size of the main heading to 40px for even smaller screens. */
     }
 }
 
+/* Media Query for screens 768px and below */
 @media (max-width: 768px) {
     .text h1 {
-        font-size: 30px;
+        font-size: 30px; /* Reduces the font size of the main heading to 30px for tablet-sized screens. */
     }
 
     .about-column, .events-column {
-        flex-basis: 45%;
+        flex-basis: 45%; /* Adjusts the base width of the columns to 45% to fit two columns per row. */
     }
 
     nav .fa {
-        display: block;
-        font-size: 22px;
-        margin: 10px;
+        display: block; /* Displays the FontAwesome icons, typically used for mobile navigation. */
+        font-size: 22px; /* Sets the font size of the icons to 22px for visibility. */
+        margin: 10px; /* Adds 10px of margin around the icons for spacing. */
     }
 
     .navigation-links {
-        position: absolute;
-        height: 100vh;
-        width: 100%;
-        text-align: right;
-        top: 0;
-        right: 0;
-        transition: 10s;
+        position: absolute; /* Positions the navigation links absolutely for a dropdown effect. */
+        height: 100vh; /* Sets the height of the dropdown to cover the entire viewport height. */
+        width: 100%; /* Sets the width of the dropdown to cover the entire viewport width. */
+        text-align: right; /* Aligns the dropdown menu to the right. */
+        top: 0; /* Positions the dropdown menu at the top of the viewport. */
+        right: 0; /* Aligns the dropdown menu to the right side of the viewport. */
+        transition: 10s; /* Adds a transition effect for the dropdown menu. */
     }
 
     .navigation-links ul {
-        padding: 20px;
+        padding: 20px; /* Adds 20px of padding around the list to create space within the dropdown. */
     }
 
     .navigation-links ul li {
-        display: block;
-        padding: 10px 0;
+        display: block; /* Displays the list items as blocks, stacking them vertically. */
+        padding: 10px 0; /* Adds padding above and below each list item for spacing. */
     }
 
     nav.active .navigation-links {
-        right: 0;
+        right: 0; /* Aligns the active dropdown menu to the right side of the viewport. */
     }
 
     .text p {
-        font-size: 18px;
+        font-size: 18px; /* Reduces the font size of the paragraph text to 18px for readability on smaller screens. */
     }
 
     .button {
-        padding: 10px 28px;
-        font-size: 15px;
+        padding: 10px 28px; /* Adjusts the padding inside the button to better fit smaller screens. */
+        font-size: 15px; /* Reduces the font size of the button text to 15px for readability. */
     }
+
     .contact {
-        text-align: center;
-        letter-spacing: 2px;
-        top: 0;
+        text-align: center; /* Centers the contact section text within its container. */
+        letter-spacing: 2px; /* Adds 2px of space between letters for emphasis. */
+        top: 0; /* Positions the contact section at the top of its container. */
     }
-    container {
-        width: 100%;
-        max-width: 600px;
-        background-color: #ff4591;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        position: relative;
+
+    .container {
+        width: 100%; /* Sets the width of the container to 100% of its parent. */
+        max-width: 600px; /* Limits the maximum width of the container to 600px for better readability. */
+        background-color: #ff4591; /* Colors the container background with pink (#ff4591). */
+        padding: 20px; /* Adds 20px of padding inside the container for spacing. */
+        border-radius: 8px; /* Rounds the corners of the container with an 8px radius. */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the container for depth. */
+        position: relative; /* Positions the container relative to other elements for layering purposes. */
     }
 }
 
+/* Media Query for screens 576px and below */
 @media (max-width: 576px) {
     .text h1 {
-        font-size: 25px;
+        font-size: 25px; /* Reduces the font size of the main heading to 25px for small screens. */
     }
 
     .text p {
-        font-size: 16px;
+        font-size: 16px; /* Reduces the font size of the paragraph text to 16px for readability on small screens. */
     }
 
     .about-column, .events-column {
-        flex-basis: 100%;
+        flex-basis: 100%; /* Sets the base width of the columns to 100%, stacking them vertically on small screens. */
     }
 
     .button {
-        padding: 8px 24px;
-        font-size: 13px;
+        padding: 8px 24px; /* Adjusts the padding inside the button to fit smaller screens. */
+        font-size: 13px; /* Reduces the font size of the button text to 13px for readability on small screens. */
     }
 }
