@@ -304,9 +304,28 @@ footer {
 }
 
 .footer-content {
-    font-size:
+    font-size: 14px; /* Sets the font size of the footer content to 14px for readability. */
+}
+/* Social icons styling */
+.social-icons {
+    display: flex; /* Uses Flexbox to align the social media icons horizontally */
+    justify-content: center; /* Centers the icons within the footer */
+    align-items: center; /* Ensures the icons are vertically aligned with each other */
+    gap: 20px; /* Adds 20px of space between each icon to keep them evenly spaced */
+    margin-top: 10px; /* Adds a margin to separate icons from the footer text */
+}
 
- 14px; /* Sets the font size of the footer content to 14px for readability. */
+/* Individual social icon styling */
+.social-icon {
+    color: #fff; /* Sets the icon color to white to match the footer text */
+    font-size: 24px; /* Sets the size of the icons for clear visibility */
+    text-decoration: none; /* Removes any underlines from the links */
+    transition: color 0.3s ease; /* Smooth transition effect for color changes on hover */
+}
+
+/* Social icon hover effect */
+.social-icon:hover {
+    color: #6b6a6a; /* Changes the icon color to a lighter pink when hovered over for visual feedback */
 }
 
 /* Media Queries */
