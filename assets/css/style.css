@@ -234,10 +234,13 @@ form {
 .contact h1 {
     text-align: center; /* Centers the main heading within the contact section. */
     letter-spacing: 2px; /* Adds 2px of space between each letter for emphasis. */
+    font-size: 30px; /* Sets the font size for the header text to 30px for readability. */
 }
 
-.contact p {
+.contact h2 {
     text-align: center; /* Centers the paragraph text within the contact section. */
+    letter-spacing: 2px; /* Adds 2px of space between each letter for emphasis. */
+    
 }
 
 .container {
